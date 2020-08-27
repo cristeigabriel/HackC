@@ -8,11 +8,11 @@ HackC is written in **snake_case**, and follows [**this**](https://api.csswg.org
 Due to lack of namespaces, to compensate for namespaces, we use keywords for functions to be able to locate them and avoid redefinitions,
 example:
 - HackC/include/interfaces/sdk/client.h
-  - "client_get_all_classes"
-  - "client_dispatch_user_message"
+  - "**client_get_all_classes**"
+  - "**client_dispatch_user_message**"
 - HackC/include/interfaces/sdk/engine.h
-  - "engine_client_get_player_info"
-  - "engine_client_get_player_for_uid"
+  - "**engine_client_get_player_info**"
+  - "**engine_client_get_player_for_uid**"
 
 etc...
 
