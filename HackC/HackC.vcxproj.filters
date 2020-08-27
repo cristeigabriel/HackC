@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hackc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory\memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\interfaces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\console\console.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\sdk\engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooking\hooks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\movement.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\sdk\entitylist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interfaces\sdk\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\memory\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\interfaces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\console\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hooking\vmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hooking\hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\globalvars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\usercmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\globals\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\features\movement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\entitylist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interfaces\sdk\clientclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
