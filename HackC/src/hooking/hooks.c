@@ -12,9 +12,7 @@ hooking_t hooking;
 // in accordance to his project's license
 // and have changed the table length
 // calculation method to the one that i use
-// in my projects alongside also
-// tinkering with naming, arglist
-// and some memory allocation
+// in my projects
 
 // thank you for your work @danielkrupinski
 // i've learned many new things from your
