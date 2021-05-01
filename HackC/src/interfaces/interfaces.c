@@ -1,22 +1,13 @@
 #include "../../include/interfaces/interfaces.h"
 #include "../../include/memory/memory.h"
 
-interfaces_t interfaces;
+interfaces_t g_interfaces;
 
-const void interfaces_initialize(void)
+void interfaces_initialize(void)
 {
-    interfaces.client = interfaces_scanner("client.dll", "VClient018");
-    interfaces.client_mode = **((void***)(interfaces.client[0][10] + 5));
-    interfaces.global_vars = **((void***)(interfaces.client[0][11] + 10));
-    interfaces.engine_client = interfaces_scanner("engine.dll", "VEngineClient014");
-    interfaces.entity_list = interfaces_scanner("client.dll", "VClientEntityList003");
-}
-
-const void interfaces_release(void)
-{
-    interfaces.client = NULL;
-    interfaces.client_mode = NULL;
-    interfaces.global_vars = NULL;
-    interfaces.engine_client = NULL;
-    interfaces.entity_list = NULL;
+	g_interfaces.m_client = interfaces_grab("client.dll", "VClient018");
+	g_interfaces.m_client_mode = **((void***)(g_interfaces.m_client[0][10] + 5));
+	g_interfaces.m_global_vars = **((void***)(g_interfaces.m_client[0][11] + 10));
+	g_interfaces.m_engine_client = interfaces_grab("engine.dll", "VEngineClient014");
+	g_interfaces.m_entity_list = interfaces_grab("client.dll", "VClientEntityList003");
 }

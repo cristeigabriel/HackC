@@ -24,9 +24,6 @@
     <ClCompile Include="src\interfaces\interfaces.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\console\console.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\interfaces\sdk\engine.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,6 +39,9 @@
     <ClCompile Include="src\interfaces\sdk\client.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\hooking\vmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\memory\memory.h">
@@ -51,9 +51,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\interfaces\sdk\client.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\console\console.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\interfaces\sdk\engine.h">
@@ -72,9 +69,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\math\vector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\globals\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\features\movement.h">

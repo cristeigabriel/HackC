@@ -2,4 +2,4 @@
 
 #include "../interfaces/sdk/usercmd.h"
 
-const void movement_autostrafe(usercmd_t* cmd);
+void movement_autostrafe(user_cmd_t* cmd);

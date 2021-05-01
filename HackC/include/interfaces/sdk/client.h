@@ -6,7 +6,7 @@
 typedef enum {
 	GET_ALL_CLASSES = 8,
 	DISPATCH_USER_MESSAGE = 38
-} client_indexes;
+} client_indexes_t;
 
 typedef enum {
 	CS_UM_VGUIMENU = 1,
@@ -68,5 +68,9 @@ typedef enum {
 	CS_UM_SENDPLAYERITEMDROPS = 61
 } cstrike15_user_message_t;
 
-struct client_class* client_get_all_classes();
+typedef struct {
+
+} base_client_dll_t;
+
+client_class_t* client_get_all_classes();
 bool client_dispatch_user_message(int message_type, unsigned int arg_1, unsigned int arg_2);

@@ -157,9 +157,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HackC.c" />
-    <ClCompile Include="src\console\console.c" />
     <ClCompile Include="src\features\movement.c" />
     <ClCompile Include="src\hooking\hooks.c" />
+    <ClCompile Include="src\hooking\vmt.c" />
     <ClCompile Include="src\interfaces\interfaces.c" />
     <ClCompile Include="src\interfaces\sdk\client.c" />
     <ClCompile Include="src\interfaces\sdk\engine.c" />
@@ -167,9 +167,7 @@
     <ClCompile Include="src\memory\memory.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\console\console.h" />
     <ClInclude Include="include\features\movement.h" />
-    <ClInclude Include="include\globals\globals.h" />
     <ClInclude Include="include\hooking\hooks.h" />
     <ClInclude Include="include\hooking\vmt.h" />
     <ClInclude Include="include\interfaces\interfaces.h" />

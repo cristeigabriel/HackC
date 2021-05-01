@@ -1,7 +1,7 @@
 #pragma once
 
+#include <stdint.h>
 #include <stdbool.h>
-#include <inttypes.h>
 
 typedef enum {
 	GET_PLAYER_INFO = 8,
@@ -12,28 +12,31 @@ typedef enum {
 	IS_CONNECTED = 27,
 	GET_LEVEL_NAME = 53,
 	CLIENT_CMD_UNRESTRICTED = 114
-} engine_client_indexes;
+} engine_client_indexes_t;
 
 typedef struct {
-	uint64_t version;
+	uint64_t m_version;
 	union {
-		uint64_t x_uid;
+		uint64_t m_steamid64;
 		struct {
-			uint32_t x_uid_low;
-			uint32_t x_uid_high;
+			uint32_t m_x_uid_low;
+			uint32_t m_x_uid_high;
 		};
 	};
-	char name[128];
-	int user_id;
-	char g_uid[33];
-	uint32_t friends_id;
-	char friends_name[128];
-	bool fake_player;
-	bool hltv;
-	int custom_files[4];
-	unsigned char files_downloaded;
-	int entity_index;
+	char m_name[32];
+	int m_user_id;
+	char m_guid[32 + 1];
+	uint32_t m_friends_id;
+	char m_friends_name[32];
+	bool m_fake_player;
+	bool m_is_hltv;
+	int m_custom_files[4];
+	char m_files_downloaded;
 } player_info_t;
+
+typedef struct {
+
+} engine_client_t;
 
 bool engine_client_get_player_info(int entity_index, const player_info_t* player_info);
 int engine_client_get_player_for_uid(int uid);
