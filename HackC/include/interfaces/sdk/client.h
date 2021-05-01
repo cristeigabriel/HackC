@@ -69,7 +69,7 @@ typedef enum {
 } cstrike15_user_message_t;
 
 typedef struct {
-
+	char pad1[64];
 } base_client_dll_t;
 
 client_class_t* client_get_all_classes();

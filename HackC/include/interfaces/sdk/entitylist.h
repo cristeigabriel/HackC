@@ -7,7 +7,7 @@ typedef enum {
 } entity_list_indexes_t;
 
 typedef struct {
-
+	char pad1[64];
 } entity_list_t;
 
 void* entity_list_get_entity(int index);

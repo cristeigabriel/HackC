@@ -20,7 +20,6 @@ BOOL APIENTRY DllMain(_In_ HMODULE module, _In_ DWORD reason_for_call, _In_opt_ 
 	case DLL_PROCESS_DETACH:
 		hooking_release();
 		memory_release();
-		interfaces_release();
 
 		fflush(stdin);
 		fflush(stdout);

@@ -19,26 +19,22 @@ typedef enum {
 	IN_BULLRUSH = 1 << 22
 } usercmd_buttons_t;
 
-// MULTIPLAYER_NUMBER = 150
-// UserCmd in CInput = 0x100
-// sizeof(UserCmd) in game = 244
-
-// https://github.com/perilouswithadollarsign/cstrike15_src/blob/29e4c1fda9698d5cebcdaf1a0de4b829fa149bf8/game/shared/usercmd.h
+#define MULTIPLAYER_NUMBER 150
 typedef struct {
 	char pad1[4];
-	int command_number;
-	int tick_count;
-	struct vector_t view_angles;
-	struct vector_t aim_direction;
-	float forward_move;
-	float side_move;
-	float up_move;
-	int buttons;
-	char impulse;
-	int weapon_select;
-	int weapon_subtype;
-	int random_seed;
-	short mouse_dx;
-	short mouse_dy;
-	bool has_been_predicted;
+	int m_command_number;
+	int m_tick_count;
+	struct vector_t m_view_angles;
+	struct vector_t m_aim_direction;
+	float m_forward_move;
+	float m_side_move;
+	float m_up_move;
+	int m_buttons;
+	char m_impulse;
+	int m_weapon_select;
+	int m_weapon_subtype;
+	int m_random_seed;
+	short m_mouse_dx;
+	short m_mouse_dy;
+	bool m_has_been_predicted;
 } user_cmd_t;

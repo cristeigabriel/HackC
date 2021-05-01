@@ -35,7 +35,7 @@ typedef struct {
 } player_info_t;
 
 typedef struct {
-
+	char pad1[64];
 } engine_client_t;
 
 bool engine_client_get_player_info(int entity_index, const player_info_t* player_info);

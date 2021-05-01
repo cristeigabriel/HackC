@@ -289,11 +289,11 @@ typedef enum {
 	SPORE_TRAIL
 } class_ids_t;
 
-typedef struct client_class_t {
+typedef struct _client_class_t {
 	void* (*create_function)(int, int);
 	void* m_create_event_function;
 	char* m_network_name;
 	void* m_recv_table;
-	client_class_t* m_next;
+	struct _client_class_t* m_next;
 	class_ids_t m_class_id;
 } client_class_t;
